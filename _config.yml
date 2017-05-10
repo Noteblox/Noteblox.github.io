@@ -15,18 +15,18 @@ portal_title: '{"API Portal"}'
 portal_name: 'Minimum API Portal'
 
 # URL - developer.[yourdomain].com
-portal_url: http://portal.minimum.apievangelist.com
+portal_url: https://Noteblox.github.io
 
 # Description - Provide a concise description of what a platform does.
 portal_description: This is a forkable, reusable API portal that runs using Jekyll. It is meant to be a single checklist that API providers can use to setup a developer portal, and make sure they are providing the minimum amount of documentation, and other resources that developers are used to.
 
 # Contact Information
-portal_contact_name: Kin Lane
-portal_contact_email: info@apievangelist.com
+portal_contact_name: Noteblox Team
+portal_contact_email: info@noteblox.com
 
 # Github Repo Information
-github_user: api-evangelist
-github_repo: portal-minimum
+github_user: Noteblox
+github_repo: Noteblox.github.io
 
 #Getting Started
 getting_started:
