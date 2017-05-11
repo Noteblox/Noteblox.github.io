@@ -525,3 +525,6 @@ legal:
 
   terms_of_service_active: true
   privacy_policy_active: true
+
+sass:
+  style: compressed
