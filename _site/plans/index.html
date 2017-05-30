@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/favicon.ico">
+
+  <title>Minimum API Portal</title>
+
+  <!-- Devicons -->
+  <link href="/css/devicon.css" rel="stylesheet">
+  <link href="/css/devicon-colors.css" rel="stylesheet">
+
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/simple-line-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <style media="screen">
+    .icon-version {
+      margin: 4rem 0;
+    }
+    i {
+      display: inline-block;
+      margin: 2rem;
+      font-size: 5rem;
+    }
+    a { color: #000; }
+
+    .justified {
+        position:absolute;
+        left:40%;
+        padding-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .sub-header {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /*
+     * Top navigation
+     * Hide default border to remove 1px line.
+     */
+    .navbar-fixed-top {
+      border: 0;
+    }
+
+    /*
+     * Sidebar
+     */
+
+    /* Hide for mobile, show later */
+    .sidebar {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+      }
+    }
+
+    /* Sidebar navigation */
+    .nav-sidebar {
+      margin-right: -21px; /* 20px padding + 1px border */
+      margin-bottom: 20px;
+      margin-left: -20px;
+    }
+    .nav-sidebar > li > a {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .nav-sidebar > .active > a,
+    .nav-sidebar > .active > a:hover,
+    .nav-sidebar > .active > a:focus {
+      color: #fff;
+      background-color: #428bca;
+    }
+
+
+    /*
+     * Main content
+     */
+
+    .main {
+      padding: 20px;
+    }
+    @media (min-width: 768px) {
+      .main {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+    .main .page-header {
+      margin-top: 0;
+    }
+
+
+    /*
+     * Placeholder dashboard ideas
+     */
+
+    .placeholders {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .placeholders h4 {
+      margin-bottom: 0;
+    }
+    .placeholder {
+      margin-bottom: 20px;
+    }
+    .placeholder img {
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        padding-left: 50px;
+    }
+  </style>
+
+</head>
+
+
+  <body>
+
+    <a href="https://github.com/Noteblox/Noteblox.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;" src="/img/forkme.png" alt="Fork me on GitHub"></a>
+    <header class="navbar navbar-light navbar-toggleable-md bd-navbar">
+      <nav class="container-fluid">
+
+
+        <div class="d-flex justify-content-between hidden-lg-up">
+          <a class="navbar-brand" href="/">
+            {"API Portal"}
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bd-main-nav" aria-expanded="true" style="">
+          <ul class="nav navbar-nav">
+            <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="/getting-started/">Getting Started</a></li>
+            <li class="nav-item "><a class="nav-link" href="/authentication/">Auth</a></li>
+            <li class="nav-item "><a href="/documentation/">Docs</a></li>
+            <li class="nav-item "><a class="nav-link" href="/plans/">Plans</a></li>
+            <li class="nav-item "><a class="nav-link" href="/code/">Code</a></li>
+            <li class="nav-item "><a class="nav-link" href="/communications/">Communications</a></li>
+            <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Updates <span class="caret"></span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/change-log/">Change Log</a>
+              <a class="dropdown-item" href="/issues/">Issues</a>
+              <a class="dropdown-item" href="/road-map/">Road Map</a>
+            </div>
+          </li>
+            
+            <li class="nav-item "><a class="nav-link" href="/support/">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <!--
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="/">{"API Portal"}</a>
+          <div class="nav navbar-nav">
+
+          </ul>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          <form class="navbar-form navbar-right">
+            <button type="submit" class="btn btn-success">Signup</button>
+          </form>
+          
+          
+          <form class="navbar-form navbar-right">
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+    -->
+
+    <div class="inner" style="padding: 75px;">
+  <div class="container">
+  <div class="row">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+
+		<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png" align="right" width="15%" style="padding: 15px;" />
+		<h3>API Plans</h3>
+		<p>Provide simple, clear information about what an API costs. Break down pricing into packages, and units of value, and provide several tiers of access, with levels that are easy to climb. Break down the packages, and details, with self-service access.</p>
+
+    <center>
+    <table border="0" style="border: 0px; width: 100%; margin-top: 25px; margin-bottom: 25px;">
+      <tr>
+        
+          <td align="left" style="padding: 10px;">
+              <p>
+              <a href="http://signup/url/" target="_blank" title="Signup">
+                <strong>Bronze</strong>
+              </a>
+              <br />
+              The description of the bronze level of API access.
+              </p>
+                
+                  <p><strong>Features</strong></p>
+                  <ul>
+                    
+                      <li>Feature One</li>
+                    
+                      <li>Feature Two</li>
+                    
+                      <li>Feature Three</li>
+                    
+                  </ul>
+                
+                
+                  <p><strong>Limits</strong></p>
+                  <ul>
+                    
+                      <li>Limit One</li>
+                    
+                      <li>Limit Two</li>
+                    
+                      <li>Limit Three</li>
+                    
+                  </ul>
+                
+          </td>
+        
+          <td align="left" style="padding: 10px;">
+              <p>
+              <a href="http://signup/url/" target="_blank" title="Signup">
+                <strong>Silver</strong>
+              </a>
+              <br />
+              The description of the silver level of API access.
+              </p>
+                
+                  <p><strong>Features</strong></p>
+                  <ul>
+                    
+                      <li>Feature One</li>
+                    
+                      <li>Feature Two</li>
+                    
+                      <li>Feature Three</li>
+                    
+                  </ul>
+                
+                
+                  <p><strong>Limits</strong></p>
+                  <ul>
+                    
+                      <li>Limit One</li>
+                    
+                      <li>Limit Two</li>
+                    
+                      <li>Limit Three</li>
+                    
+                  </ul>
+                
+          </td>
+        
+          <td align="left" style="padding: 10px;">
+              <p>
+              <a href="http://signup/url/" target="_blank" title="Signup">
+                <strong>Gold</strong>
+              </a>
+              <br />
+              The description of the gold level of API access.
+              </p>
+                
+                  <p><strong>Features</strong></p>
+                  <ul>
+                    
+                      <li>Feature One</li>
+                    
+                      <li>Feature Two</li>
+                    
+                      <li>Feature Three</li>
+                    
+                  </ul>
+                
+                
+                  <p><strong>Limits</strong></p>
+                  <ul>
+                    
+                      <li>Limit One</li>
+                    
+                      <li>Limit Two</li>
+                    
+                      <li>Limit Three</li>
+                    
+                  </ul>
+                
+          </td>
+        
+      </tr>
+    </table>
+    </center>
+
+		<p>Make sure and provide a relief valve for pricing, allowing developers to pay for what they need. Be as transparent as possible about what the upper tiers of access look like, and what it takes to get there. Look at the pricing of other popular APIs, to get an idea of the normal type of presenting pricing.</p>
+
+  </div>
+  <div class="col-md-1"></div>
+
+	</div>
+</div>
+
+</div>
+
+
+    <footer>
+      <div class="wrap center">
+        <ul class="nav navbar-nav">
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="http://apievangelist.com">By API Evangelist</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="/js/libs/jquery.js"></script>
+    <script src="/js/libs/tether.js"></script>
+    <script src="/js/libs/bootstrap.js"></script>
+    <script src="/js/libs/mustache.js"></script>
+    <script src="/js/libs/pace.js"></script>
+
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="/js/libs/Chart.js"></script>
+
+  </body>
+</html>

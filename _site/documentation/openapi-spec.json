@@ -1,0 +1,98 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a forkable, reusable API portal that runs using Jekyll. It is meant to be a single checklist that API providers can use to setup a developer portal, and make sure they are providing the minimum amount of documentation, and other resources that developers are used to.",
+    "version": "1",
+    "title": "Minimum API Portal",
+    "contact": {
+      "name": "Noteblox Team",
+      "email": "info@noteblox.com"
+    }
+  },
+  "host": "api.example.com",
+  "basePath": "/v1",
+  "schemes": [  
+    "https"
+  ],
+  "paths": {
+    
+    "/products": {
+      
+      "get": {
+        "summary": "Products",
+        "description": "The description of the product.",
+        "operationId": "getProducts",
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "",
+            "in": "",
+            "description": "",
+            "required": ,
+            "type": ,
+            "format": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Sheet_1"
+              }
+            }
+          }
+        }
+      }
+    }
+    "/services": {
+      
+      "get": {
+        "summary": "Services",
+        "description": "The description of the service.",
+        "operationId": "getServices",
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "",
+            "in": "",
+            "description": "",
+            "required": ,
+            "type": ,
+            "format": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Sheet_1"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "HTTP_BASIC": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "Sheet_1": {
+      "required": [
+        "LocAddState"
+      ],
+      "properties": {
+        "LocAddState": {
+          "type": "string",
+          "example": "sample LocAddState"
+        }
+      }
+    }
+  }
+}

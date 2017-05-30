@@ -1,0 +1,88 @@
+{
+  "name": "Minimum API Portal",
+  "description": "This is a forkable, reusable API portal that runs using Jekyll. It is meant to be a single checklist that API providers can use to setup a developer portal, and make sure they are providing the minimum amount of documentation, and other resources that developers are used to.",
+  "image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png",
+  "created": "",
+  "modified": "",
+  "url": "https://Noteblox.github.io",
+  "SpecificationVersion": "0.14",
+  "apis": [
+    {
+      "name": "Minimum API Portal",
+      "description": "This is a forkable, reusable API portal that runs using Jekyll. It is meant to be a single checklist that API providers can use to setup a developer portal, and make sure they are providing the minimum amount of documentation, and other resources that developers are used to.",
+      "image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png",
+      "humanURL": "https://Noteblox.github.io",
+      "baseURL": "https://Noteblox.github.io/apis.json",
+      "properties": [
+        {
+          "type": "X-blog",
+          "url": "https://Noteblox.github.io/blog/"
+        },
+        {
+          "type": "X-blog-rss-feed",
+          "url": "https://Noteblox.github.io/blog.xml"
+        },
+        {
+          "type": "X-getting-started",
+          "url": "https://Noteblox.github.io/getting-started/"
+        },
+        {
+          "type": "X-authentication",
+          "url": "https://Noteblox.github.io/authentication/"
+        },
+        {
+          "type": "X-code",
+          "url": "https://Noteblox.github.io/code/"
+        },
+        {
+          "type": "X-direct-support",
+          "url": "https://Noteblox.github.io/support/"
+        },
+        {
+          "type": "X-self-service-support",
+          "url": "https://Noteblox.github.io/support/"
+        },
+        {
+          "type": "X-change-log",
+          "url": "https://Noteblox.github.io/change-log/"
+        },
+        {
+          "type": "X-roadmap",
+          "url": "https://Noteblox.github.io/road-map/"
+        },
+        {
+          "type": "X-issues",
+          "url": "http://github.com/issues/"
+        },
+        
+        {
+          "type": "X-github",
+          "url": "https://github.com/api-evangelist"
+        },
+        
+        
+        {
+          "type": "X-openapi-spec",
+          "url": "https://Noteblox.github.io/documentation/openapi-spec.json"
+        },
+        {
+          "type": "X-documentation",
+          "url": "https://Noteblox.github.io/documentation/"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "Noteblox Team",
+          "email": "info@noteblox.com"
+        }
+      ]
+    }
+  ],
+  "include": [],
+  "maintainers": [
+    {
+      "FN": "Noteblox Team",
+      "email": "info@noteblox.com"
+    }
+  ]
+}

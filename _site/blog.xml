@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title></title>
+		<description></description>
+		<link>http://localhost:4000</link>
+		<language>en-us</language>
+		<atom:link href="http://localhost:4000/blog.xml" rel="self" type="application/rss+xml" />
+		<item>
+				<title>Hello World!</title>
+				<description>&lt;p&gt;Hello World!&lt;/p&gt;
+</description>
+				<pubDate>Thu, 01 Sep 2016 00:00:00 +0300</pubDate>
+				<link></link>
+				<guid isPermaLink="true"></guid>
+			</item><item>
+				<title>Hello World!</title>
+				<description>&lt;p&gt;Hello World!&lt;/p&gt;
+</description>
+				<pubDate>Thu, 01 Sep 2016 00:00:00 +0300</pubDate>
+				<link></link>
+				<guid isPermaLink="true"></guid>
+			</item><item>
+				<title>Minimum Viable API Portal Definition</title>
+				<description>&lt;p&gt;Hello World!&lt;/p&gt;
+</description>
+				<pubDate>Mon, 01 Aug 2016 00:00:00 +0300</pubDate>
+				<link></link>
+				<guid isPermaLink="true"></guid>
+			</item>
+	</channel>
+</rss>
